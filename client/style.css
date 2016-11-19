@@ -1,0 +1,22 @@
+
+.blocks{
+	display: inline-block;
+	vertical-align: top;
+	width:200px;
+	height: 200px;
+	border:1px solid black;
+	float:left;
+}
+
+#wrapper{
+	width: 1200px;
+	height: auto;
+	overflow:hidden;
+}
+
+.number{
+	font-size:5em;
+	margin:25%;
+	vertical-align: top;
+	display: inline-block;
+}
