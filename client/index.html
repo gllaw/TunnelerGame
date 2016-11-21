@@ -5,24 +5,38 @@
 	<link rel="stylesheet" href="style.css">
 	<script src='angular/angular.js' charset="utf-8"></script>
 	<script src='angular-route/angular-route.js'></script>
+	  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 	<script src='app.js'></script>
+
 </head>
 <body>
+
 	<h1>Welcome to Tunneler!</h1>
-	<div id='wrapper' ng-controller="tileController">
-		<h1>{{test}}</h1>
-			<div ng-repeat = "x in tiles">
-				<div class='blocks'>{{x.position}}
+	<div ng-controller="tileController">
+		<div class="row">
+			<div id = "wrapper" class="col s9">
+				<h1>{{test}}</h1>
+				<div ng-repeat = "x in tiles">
+					<div class='blocks'>{{x.position}}
 
-				<button ng-click="tileController.addValue($index)">edit</button>
+					<button ng-click="addValue($index)">edit</button>
 
-				<span class="number">{{x.value}}</span>
+					<span class="number">{{x.value}}</span>
 
-				<span class="player">{{x.player}}</span>
+					<span class="player">{{x.player}}</span>
 
 
+					</div>
 				</div>
 			</div>
+			<div class="col s3">
+			<h1>Actions</h1>
+			</div>
+		</div>
 	</div>
 		
 
